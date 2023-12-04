@@ -1,12 +1,36 @@
+body {
+    box-sizing: border-box;
+    background-color: black;
+    color:aliceblue
 
-/* 
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.todo-item{
+    min-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1%;
+    font-size: 22px;
 
-*/
+}
+
+.todo.item button {
+    margin-left: auto;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: -5.5rem;
+    font-weight: 500;
+    line-height: 5.2;
+    font-size: calc(2rem + 2vw);
+}
+
+button, input, optgroup, select, textarea {
+    margin: 16px;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}

@@ -1,12 +1,15 @@
-//import react into the bundle
 import React from "react";
 import ReactDOM from "react-dom";
-
-// include your styles into the webpack bundle
 import "../styles/index.css";
+import ToDoList from "./component/ToDoList";
 
-//import your own components
-import Home from "./component/home.jsx";
+const App = () => {
+	return (
+		<>
+		<ToDoList/>
+		</>
+	);
+};
 
-//render your react application
-ReactDOM.render(<Home />, document.querySelector("#app"));
+
+ReactDOM.render(<App />, document.querySelector("#app"));
